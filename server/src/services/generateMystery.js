@@ -35,7 +35,7 @@ export function validateMystery(data, { depth = 'standard' } = {}) {
 export async function generateMystery(scenario, settings = {}) {
   if (!process.env.GEMINI_API_KEY) throw new Error('Mystery generation is not configured yet. Add GEMINI_API_KEY to server/.env.');
   const client = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-  const model = client.getGenerativeModel({ model: process.env.GEMINI_MODEL || 'gemini-2.0-flash', generationConfig: { responseMimeType: 'application/json', temperature: 0.8 } });
+  const model = client.getGenerativeModel({ model: process.env.GEMINI_MODEL || 'gemini-3.6-flash', generationConfig: { responseMimeType: 'application/json', temperature: 0.8 } });
   const difficulty = {
     easy: 'Easy: make the key clues clear and the deduction straightforward, with minimal ambiguity.',
     medium: 'Medium: use subtle connections and one plausible misleading detail while keeping the solution fair.',

@@ -4,7 +4,7 @@ Create a fictional mystery from a short scenario, inspect the evidence, and make
 
 ## Requirements
 
-- Node.js 18 or newer
+- Node.js 18.11 or newer
 - MongoDB (local or hosted)
 - A Google Gemini API key
 

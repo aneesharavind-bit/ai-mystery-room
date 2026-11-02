@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import { getCaseNotes, getSavedCaseIds, hasSeenBriefing, markBriefingSeen, rememberCase, saveCaseNotes } from './caseStorage.js';
 
-const API = import.meta.env.VITE_API_URL || 'https://ai-mystery-room-dmrx.onrender.com';
+const API = import.meta.env.VITE_API_URL || 'https://ai-mystery-room-dmrx.onrender.com/api';
 const typeIcons = { 'WhatsApp Message': MessageCircle, Image: ImageIcon, 'CCTV Recording': Video, Document: FileText, 'Witness Statement': UserRound };
 
 async function request(path, options) {
